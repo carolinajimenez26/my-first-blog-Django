@@ -1,19 +1,31 @@
+{% load staticfiles %}
 <html>
   <head>
     <title>Carolina Jiménez's	blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   </head>
   <body>
-    <h1>My first Blog with Django!</h1>
-    <div>
-        <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+    <h1 class="title center solid-bord-black">My first Blog with <a class="Django">Django</a>!</h1>
 
     {% for post in posts %}
-      <div>
-        <p>published: {{ post.published_date }}</p>
+      <div class="post">
+        <p class="date">published: {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
       </div>
     {% endfor %}
+
+    <footer>
+      <hr>
+      <p class="center"> Made By </p>
+      <h3 class="signature center"> Carolina Jiménez Gómez </h3>
+    </footer>
   </body>
 </html>

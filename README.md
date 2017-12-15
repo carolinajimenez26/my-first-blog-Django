@@ -12,3 +12,9 @@ python3 -m venv myvenv
 ```bash
 source myvenv/bin/activate
 ```
+
+_
+
+### Links of interest
+
+[Color Picker](https://www.webpagefx.com/web-design/color-picker/)
