@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Carolina Jiménez's	blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <h1 class="title center">My first Blog with <a class="Django">Django</a>!</h1>
+
+    <div class="content container">
+      <div class="row">
+        <div class="col-md-8">
+        {% block content %}
+        {% endblock %}
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <hr>
+      <p class="center"> Made By </p>
+      <h3 class="signature center"> Carolina Jiménez Gómez </h3>
+    </footer>
+  </body>
+</html>
