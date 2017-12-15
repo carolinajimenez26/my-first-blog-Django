@@ -12,13 +12,24 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   </head>
   <body>
-    <h1 class="title center">My first Blog with <a class="Django">Django</a>!</h1>
+    <div class="page-header">
+      <a href="/">
+        <h1 class="title center">My first Blog with <div class="Django">Django</div>!</h1>
+      </a>
+    </div>
 
-    <div class="content container">
+    <div class="container add-post">
+      <p>Add a Post</p>
+      <a href="{% url 'post_new' %}" class="top-menu">
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+    </div>
+
+    <div class="content container main">
       <div class="row">
         <div class="col-md-8">
-        {% block content %}
-        {% endblock %}
+          {% block content %}
+          {% endblock %}
         </div>
       </div>
     </div>

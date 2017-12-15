@@ -7,6 +7,10 @@ h1 a {
   color: #83389C;
 }
 
+.page-header a {
+  text-decoration: none;
+}
+
 .title {
   background-color: #BA56B0;
   margin-top: 0;
@@ -25,6 +29,7 @@ h1 a {
 .Django {
   font-family: 'Lobster';
   -webkit-text-fill-color: #ff9400;
+  display: inline;
 }
 
 .center {
@@ -35,6 +40,21 @@ h1 a {
   color: #ffffff;
   font-size: 36pt;
   text-decoration: none;
+}
+
+.add-post {
+  display: inline-block;
+}
+
+.add-post p {
+  margin-top: 10;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  float: right;
+}
+
+.add-post a span{
+  color: black;
 }
 
 .content {
